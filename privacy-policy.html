@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>隐私政策 / Privacy Policy — 澄页 ClearTab</title>
+    <link rel="icon" type="image/png" href="./assets/icon-128.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="./index.html">
+          <img src="./assets/icon-128.png" alt="澄页 ClearTab" width="32" height="32" />
+          <span>澄页 ClearTab</span>
+        </a>
+        <nav class="nav-links" aria-label="主导航">
+          <a href="./index.html">主页</a>
+          <a href="./guide.html">使用指南</a>
+          <a href="./changelog.html">更新记录</a>
+          <a href="./support.html">支持与反馈</a>
+          <a href="./privacy-policy.html" class="is-active">隐私政策</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <article class="doc-card">
+        <section lang="zh-CN">
+          <h1>《澄页》ClearTab 隐私政策</h1>
+          <div class="doc-meta">
+            <span>生效日期：2026-11-26</span>
+            <span>适用版本：v1.5.7 及以上</span>
+            <span>开发者：Sylvan</span>
+            <span>公开反馈邮箱：<a href="mailto:qieyifengzhi@gmail.com">qieyifengzhi@gmail.com</a></span>
+          </div>
+          <p>
+            《澄页》（ClearTab）是一款免费、无广告、无内置打赏的 Chrome 新标签页与书签管理工具。本隐私政策基于《澄页》实际源码与运行机制编写，如实说明本扩展对数据的访问、存储、传输及删除方式。
+          </p>
+
+          <h2>1. 数据访问与本地存储范围</h2>
+          <ul>
+            <li>
+              <strong>Chrome 原生书签数据访问与管理（<code>bookmarks</code> 权限）</strong>：仅用于在本地读取、展示、搜索及按您的明确操作新建、重命名、移动、重排或删除 Chrome 原生书签与文件夹。本扩展不建立独立云端书签库，也不篡改原生书签标题或网址来夹带额外数据。
+            </li>
+            <li>
+              <strong>Chrome Storage 本地配置存储（<code>storage</code> 权限）</strong>：主题配色（含默认「简约中性」、内置「深潮青·澄序」及自定义主题）、深浅色模式、主页布局模式、自由布局坐标、搜索引擎列表、自定义图标及本地壁纸仅保存在您当前浏览器的 <code>chrome.storage.local</code> 中。
+            </li>
+            <li>
+              <strong>网站 Favicon 获取方式（<code>favicon</code> 权限）</strong>：通过 Chrome 原生 Manifest V3 <code>/_favicon/</code> 接口从浏览器本地缓存读取书签网站图标；未命中缓存时在本地生成首字缩写图标。<strong>绝不会将您的书签网址发送至任何第三方 Favicon 服务器。</strong>
+            </li>
+            <li>
+              <strong>网页搜索与搜索服务（<code>search</code> 权限）</strong>：新标签页搜索框默认选用「Chrome 默认搜索引擎」，提交网页搜索时通过 Chrome 原生 <code>chrome.search.query()</code> 接口交由您在 Chrome 中设置的默认搜索引擎执行。若您在搜索框下拉菜单中<strong>主动切换</strong>至其他内置或自定义搜索引擎，搜索关键词将直接跳转至您所选择的对应搜索服务商（如 Google、Bing、百度、DuckDuckGo 或您自行添加的搜索模板）。本扩展不截获、不中转、不修改浏览器默认搜索引擎，也不记录搜索历史。
+            </li>
+            <li>
+              <strong>浮动书签栏可选网站访问权限（<code>optional_host_permissions</code>：<code>http://*/*</code>、<code>https://*/*</code>）</strong>：扩展安装时<strong>默认不申请</strong>任何网页访问权限。仅当您在设置中主动开启「浮动书签栏」时，浏览器才会弹窗请求该权限，用于在普通网页顶部通过 Shadow DOM 覆盖显示书签栏。本扩展<strong>不读取</strong>网页表单、密码、网页正文或浏览历史，且您可随时在设置或 Chrome 扩展管理页撤销该权限。
+            </li>
+          </ul>
+
+          <h2>2. 实际外部网络请求</h2>
+          <ul>
+            <li>《澄页》<strong>不包含</strong>任何统计分析、广告归因、崩溃上报或用户行为追踪脚本，<strong>不向开发者或第三方服务器上传任何数据</strong>。</li>
+            <li>扩展所需的全部脚本、样式与内置图标均随安装包本地加载。</li>
+            <li>仅当您<strong>主动</strong>点击书签、在搜索框输入网址直达或提交搜索关键词时，浏览器才会按您的指令向目标站点或您所选择的搜索引擎发起常规网页导航请求。</li>
+          </ul>
+
+          <h2>3. 数据处理、传输、共享与删除机制</h2>
+          <ul>
+            <li><strong>不收集、不传输、不出售、不共享</strong>：我们不收集、不向外部传输、不出售也不与任何第三方共享您的书签数据、配置或个人信息。</li>
+            <li>
+              <strong>本地数据删除方式</strong>：您可随时在「澄页设置 → 数据与备份」中点击「清除自定义图标数据」或「恢复默认设置」（该操作不会删除您的 Chrome 原生书签）；卸载《澄页》扩展后，Chrome 将自动清除该扩展关联的全部 <code>chrome.storage.local</code> 数据。
+            </li>
+          </ul>
+
+          <h2>4. Chrome Web Store Limited Use 声明</h2>
+          <p>
+            《澄页》对通过 Chrome 扩展 API 获取的数据的使用严格遵守 Google《Chrome Web Store User Data Policy》（包括 <strong>Limited Use</strong> 限制使用要求）：
+          </p>
+          <ul>
+            <li>数据仅用于在本地向用户提供界面中明确可见的书签管理与新标签页功能；</li>
+            <li>绝不将数据用于广告投放、用户画像、信用评估或转让给任何第三方。</li>
+          </ul>
+
+          <h2>5. 联系方式</h2>
+          <p>
+            如您对本隐私政策或数据处理方式有任何疑问，请联系开发者 <strong>Sylvan</strong>：<a href="mailto:qieyifengzhi@gmail.com">qieyifengzhi@gmail.com</a>。
+          </p>
+        </section>
+
+        <hr class="divider" />
+
+        <section lang="en">
+          <h1>ClearTab Privacy Policy (English)</h1>
+          <div class="doc-meta">
+            <span>Effective Date: 2026-11-26</span>
+            <span>Applies To: ClearTab v1.5.7 and later</span>
+            <span>Developer: Sylvan</span>
+            <span>Support Email: <a href="mailto:qieyifengzhi@gmail.com">qieyifengzhi@gmail.com</a></span>
+          </div>
+          <p>
+            ClearTab is a free, ad-free Chrome New Tab and bookmark organization extension. This Privacy Policy accurately describes how ClearTab accesses, stores, and handles data based on its actual source code and runtime behavior.
+          </p>
+
+          <h2>1. Data Access &amp; Local Storage</h2>
+          <ul>
+            <li>
+              <strong>Native Chrome Bookmarks (<code>bookmarks</code> permission)</strong>: Accessed locally solely to display, search, and—when explicitly initiated by you—create, rename, move, reorder, or delete native Chrome bookmarks and folders.
+            </li>
+            <li>
+              <strong>Local Preferences (<code>storage</code> permission)</strong>: Theme presets ("Neutral" default, "Deep Tide Teal", and custom themes), light/dark mode, layout modes, free-layout coordinates, search engine preferences, custom icons, and local wallpapers are stored exclusively in your browser's <code>chrome.storage.local</code>.
+            </li>
+            <li>
+              <strong>Website Favicons (<code>favicon</code> permission)</strong>: Resolved locally via Chrome's Manifest V3 <code>/_favicon/</code> API from browser cache, falling back to locally generated monogram badges. ClearTab never sends your bookmark URLs to third-party favicon services.
+            </li>
+            <li>
+              <strong>Web Search &amp; Search Providers (<code>search</code> permission)</strong>: Every New Tab defaults to your browser's default search engine via Chrome's native <code>chrome.search.query()</code> API. Only if you explicitly switch to another built-in or custom search engine in the dropdown will your query be sent directly to that chosen search provider. ClearTab never intercepts, proxies, logs, or alters your Chrome default search engine setting.
+            </li>
+            <li>
+              <strong>Optional Website Access (<code>optional_host_permissions</code>: <code>http://*/*</code>, <code>https://*/*</code>)</strong>: Not requested upon installation. Requested only when you explicitly enable the optional Floating Bookmark Bar in Settings, solely to render a Shadow DOM bookmark overlay at the top of web pages. ClearTab never reads form inputs, passwords, page contents, or browsing history, and you can revoke this permission at any time.
+            </li>
+          </ul>
+
+          <h2>2. External Network Requests</h2>
+          <ul>
+            <li>ClearTab contains <strong>no</strong> analytics, telemetry, ads, or remote code execution, and never transmits user data to any developer-controlled or third-party server.</li>
+            <li>All extension scripts, styles, and built-in icons are bundled locally inside the extension package.</li>
+            <li>External network requests occur only when you explicitly click a bookmark, navigate to a typed URL, or submit a query to your chosen search engine.</li>
+          </ul>
+
+          <h2>3. Data Processing, Sharing &amp; Deletion</h2>
+          <ul>
+            <li>ClearTab does not collect, transmit, sell, rent, or share user data with any third parties.</li>
+            <li>You may delete locally stored extension data at any time via <strong>Settings → Data &amp; Backup</strong> ("Clear Custom Icon Data" or "Reset to Defaults", which never deletes native Chrome bookmarks), or by uninstalling the extension, which removes all <code>chrome.storage.local</code> data.</li>
+          </ul>
+
+          <h2>4. Chrome Web Store User Data Policy &amp; Limited Use</h2>
+          <p>
+            ClearTab's use of information received from Chrome APIs strictly adheres to the <strong>Chrome Web Store User Data Policy</strong>, including the <strong>Limited Use</strong> requirements: data is used solely to provide user-facing bookmark and New Tab features prominent in the UI and is never transferred, sold, or used for advertising or profiling.
+          </p>
+
+          <h2>5. Contact</h2>
+          <p>
+            For privacy inquiries or support, contact developer <strong>Sylvan</strong> at <a href="mailto:qieyifengzhi@gmail.com">qieyifengzhi@gmail.com</a>.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© 2026 Sylvan · 澄页 ClearTab</span>
+        <div class="footer-links">
+          <a href="./index.html">主页</a>
+          <a href="./guide.html">使用指南</a>
+          <a href="./support.html">支持与反馈</a>
+          <a href="mailto:qieyifengzhi@gmail.com">qieyifengzhi@gmail.com</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
