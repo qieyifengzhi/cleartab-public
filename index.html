@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>澄页 ClearTab — 让书签井然有序，让浏览回归清晰</title>
+    <meta
+      name="description"
+      content="澄页 ClearTab 是一款以 Chrome 原生书签为核心的极简桌面式新标签页与可选浮动书签栏扩展。免费、无广告、100% 本地隐私。"
+    />
+    <link rel="icon" type="image/png" href="./assets/icon-128.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="./index.html">
+          <img src="./assets/icon-128.png" alt="澄页 ClearTab" width="32" height="32" />
+          <span>澄页 ClearTab</span>
+        </a>
+        <nav class="nav-links" aria-label="主导航">
+          <a href="./index.html" class="is-active">主页</a>
+          <a href="./guide.html">使用指南</a>
+          <a href="./changelog.html">更新记录</a>
+          <a href="./support.html">支持与反馈</a>
+          <a href="./privacy-policy.html">隐私政策</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <img
+          class="hero-icon"
+          src="./assets/icon-128.png"
+          alt="澄页 ClearTab 品牌图标"
+          width="84"
+          height="84"
+        />
+        <h1>澄页 ClearTab</h1>
+        <p class="hero-tagline">让书签井然有序，让浏览回归清晰。</p>
+        <p class="hero-desc">
+          以 Chrome 原生书签作为唯一数据源的极简桌面式新标签页扩展，提供桌面文件夹、展开分组、瀑布流看板与自由布局四种模式，以及可选的网页顶部自动隐藏浮动书签栏。
+        </p>
+        <div class="hero-actions">
+          <span class="btn btn-primary btn-disabled" aria-disabled="true">
+            Chrome 网上应用店 · 即将发布
+          </span>
+          <a class="btn" href="./guide.html">阅读使用指南</a>
+          <a class="btn" href="./privacy-policy.html">查看隐私政策</a>
+        </div>
+        <div class="badges">
+          <span class="badge">免费 · 无广告 · 无打赏</span>
+          <span class="badge">默认「简约中性 Neutral」主题</span>
+          <span class="badge">保留「深潮青·澄序」内置主题</span>
+          <span class="badge">默认跟随系统深浅色</span>
+          <span class="badge">100% 本地数据与原生书签</span>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">核心特性</h2>
+        <div class="grid-3">
+          <article class="card">
+            <h3>Chrome 原生书签唯一数据源</h3>
+            <p>
+              直接读写 <code>chrome.bookmarks</code>，无需额外账号或导入导出即可使用；跨标签页与书签管理器实时同步变更。
+            </p>
+          </article>
+          <article class="card">
+            <h3>四种布局与可视化自由拖拽</h3>
+            <p>
+              支持桌面文件夹、展开分组、纵向瀑布流看板与自由布局模式；支持直接在主页拖拽位置、调节宽高并独立持久化。
+            </p>
+          </article>
+          <article class="card">
+            <h3>可选仿原生浮动书签栏</h3>
+            <p>
+              默认关闭；仅在主动开启并授权后，在普通网页顶部悬停呼出（Shadow DOM 隔离、零布局位移），随时可撤销权限。
+            </p>
+          </article>
+          <article class="card">
+            <h3>尊重浏览器默认搜索引擎</h3>
+            <p>
+              新标签页默认通过 <code>chrome.search.query()</code> 调用您的 Chrome 默认搜索引擎，同时支持按需临时切换其他引擎或本地检索书签。
+            </p>
+          </article>
+          <article class="card">
+            <h3>简约中性默认与深潮青经典主题</h3>
+            <p>
+              默认提供「简约中性 (Neutral)」浅色灰白与深色石墨灰双套配色，同时保留「深潮青·澄序」与全套实时预览自定义主题引擎。
+            </p>
+          </article>
+          <article class="card">
+            <h3>纯净克制与严格本地隐私</h3>
+            <p>
+              无新闻资讯、无热搜推荐、无统计追踪或远程脚本；网站图标通过 Chrome 原生 <code>/_favicon/</code> 本地缓存读取。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">界面预览</h2>
+        <div class="gallery-grid">
+          <figure class="shot-card">
+            <img
+              src="./assets/screenshot-01-minimal-newtab.png"
+              alt="澄页 ClearTab 简约中性深色新标签页"
+              loading="lazy"
+            />
+            <figcaption>默认「简约中性 (Neutral)」深色新标签页与原生书签桌面</figcaption>
+          </figure>
+          <figure class="shot-card">
+            <img
+              src="./assets/screenshot-05-light-custom-theme.png"
+              alt="澄页 ClearTab 简约中性浅色新标签页"
+              loading="lazy"
+            />
+            <figcaption>自动跟随系统切换的「简约中性 (Neutral)」浅色新标签页</figcaption>
+          </figure>
+          <figure class="shot-card">
+            <img
+              src="./assets/screenshot-04-settings-live-preview.png"
+              alt="澄页 ClearTab 三栏设置中心与实时预览"
+              loading="lazy"
+            />
+            <figcaption>三栏设置中心、内置主题卡片与右侧实时预览面板</figcaption>
+          </figure>
+          <figure class="shot-card">
+            <img
+              src="./assets/screenshot-02-free-layout.png"
+              alt="澄页 ClearTab 自由布局模式"
+              loading="lazy"
+            />
+            <figcaption>自由布局模式：按文件夹模块组织并支持拖拽与尺寸调节</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="grid-2">
+          <div class="card">
+            <h3>安装与迁移</h3>
+            <p>
+              Chrome 网上应用店审核上线后将开放直接安装（当前状态：<strong>即将发布</strong>）。若您曾使用本地加载版，可通过设置中心的 JSON 一键导出导入平滑迁移配置。
+            </p>
+            <p style="margin-top: 12px">
+              <a href="./guide.html">查看安装与使用指南 →</a>
+            </p>
+          </div>
+          <div class="card">
+            <h3>反馈与支持</h3>
+            <p>
+              如有功能建议、问题反馈或隐私咨询，欢迎通过邮件联系开发者 <strong>Sylvan</strong>：
+              <a href="mailto:qieyifengzhi@gmail.com">qieyifengzhi@gmail.com</a>
+            </p>
+            <p style="margin-top: 12px">
+              <a href="./support.html">查看常见问题与支持说明 →</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© 2026 Sylvan · 澄页 ClearTab（免费、无广告、本地优先）</span>
+        <div class="footer-links">
+          <a href="./privacy-policy.html">隐私政策</a>
+          <a href="./guide.html">使用指南</a>
+          <a href="./changelog.html">更新记录</a>
+          <a href="mailto:qieyifengzhi@gmail.com">qieyifengzhi@gmail.com</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
